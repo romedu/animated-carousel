@@ -1,0 +1,49 @@
+body {
+   background-color: black;
+}
+
+.carousel {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-grow: 1;
+   margin: 20vh 25vw;
+   height: 60vh;
+   width: 50vw;
+   background-image: url("https://d24fkeqntp1r7r.cloudfront.net/wp-content/uploads/2019/03/14191224/kazuend-30877-unsplash.jpg");
+   background-size: cover; 
+   transition: background-image 2s ease-in-out;
+}
+
+.carousel button {
+   border: none;
+   font-size: 4em;
+   background-color: transparent;
+   color: white;
+   opacity: 0.4;
+   animation: color 0.5s 0.5s;
+}
+
+.carousel button:hover {
+   opacity: 0.8;
+   cursor: pointer;
+}
+
+.carousel button:focus {
+   outline-color: white;
+}
+
+.carousel button:active {
+   opacity: 1;
+   color: lightgray;
+}
+
+.arrow-btn {
+   height: fit-content;
+   padding: 0 0.5vw;
+}
+
+.play-stop-btn {
+   align-self: flex-end;
+   margin-bottom: 1vh;
+}
